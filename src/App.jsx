@@ -10,7 +10,7 @@ function App() {
   const [life, setLife] = React.useState(3);
 
   return (
-    <div className="App">
+    <div className="App center">
       <form
         onSubmit={(event) => {
           event.preventDefault();

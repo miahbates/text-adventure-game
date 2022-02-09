@@ -44,8 +44,13 @@ const chapters = [
       },
       {
         answerID: "b",
-        answer: "Walk, you would never trust adam riding a bike!",
+        answer: "Walk, you would never trust Adam riding a bike!",
         correct: true,
+      },
+      {
+        answerID: "b",
+        answer: "Steal Adam's bike.",
+        correct: false,
       },
     ],
   },

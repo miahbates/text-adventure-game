@@ -16,8 +16,8 @@ export default function Player({ name }) {
   } else {
     return (
       <div>
-        <h2>{player.name}</h2>
-        <img src={player.avatar_url} alt="" />
+        <h2 className="player__username">{player.name}</h2>
+        <img className="player__avatar" src={player.avatar_url} alt="" />
       </div>
     );
   }
