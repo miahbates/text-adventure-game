@@ -1,5 +1,6 @@
 import React from "react";
 import Player from "./components/Player.jsx";
+import Chapter from "./components/Chapter.jsx";
 
 import "./App.css";
 
@@ -18,6 +19,7 @@ function App() {
         <button type="submit">Search Player</button>
       </form>
       <Player name={name} />
+      <Chapter />
     </div>
   );
 }
