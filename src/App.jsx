@@ -6,6 +6,8 @@ import "./App.css";
 
 function App() {
   const [name, setName] = React.useState(null);
+  const [chapterStage, setChapterStage] = React.useState(1);
+  const [life, setLife] = React.useState(3);
 
   return (
     <div className="App">
@@ -19,7 +21,12 @@ function App() {
         <button type="submit">Search Player</button>
       </form>
       <Player name={name} />
-      <Chapter />
+      <Chapter
+        chapterStage={chapterStage}
+        setChapterStage={setChapterStage}
+        life={life}
+        setLife={setLife}
+      />
     </div>
   );
 }
