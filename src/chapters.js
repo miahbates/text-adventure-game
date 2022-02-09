@@ -32,6 +32,11 @@ const chapters = [
       },
     ],
   },
+  {
+    id: 20,
+    narration: "You LOST",
+    options: [],
+  },
 ];
 
 export default chapters;
