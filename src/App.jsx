@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   const [name, setName] = React.useState(null);
-  const [chapterStage, setChapterStage] = React.useState(1);
+  const [chapterStage, setChapterStage] = React.useState(0);
   const [life, setLife] = React.useState(3);
 
   return (
