@@ -33,6 +33,23 @@ const chapters = [
     ],
   },
   {
+    id: 3,
+    narration:
+      "You meet Adam, and he offers you ride on motorbike, do you ride the bike or walk?",
+    options: [
+      {
+        answerID: "a",
+        answer: "Ride the bike 😜",
+        correct: false,
+      },
+      {
+        answerID: "b",
+        answer: "Walk, you would never trust adam riding a bike!",
+        correct: true,
+      },
+    ],
+  },
+  {
     id: 20,
     narration: "You LOST",
     options: [],
