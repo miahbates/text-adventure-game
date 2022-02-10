@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "trashhandregular";
+  src: url("assets/fonts/TrashHand-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,26 +14,7 @@
 body {
   background-color: #6496e1;
   background-color: #ffffff;
-}
-
-/* buttons and forms */
-.buttonsForm {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 1rem;
-}
-
-.btn {
-  padding: 1rem;
-  background-color: #fff;
-  border: none;
-  box-shadow: 1px 5px 10px rgba(73, 71, 71, 0.2);
-  cursor: pointer;
-  transition: transform 0.5s;
-}
-
-.btn:hover {
-  transform: scale(1.02);
+  font-family: "trashhandregular";
 }
 
 .App {
@@ -39,6 +27,31 @@ body {
   gap: 2rem;
 }
 
+/* chapter component  */
+
+.buttonsForm {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1rem;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px rgba(73, 71, 71, 0.2);
+  transition: transform 0.5s, box-shadow 0.5s;
+  font-family: "trashhandregular";
+  letter-spacing: 3px;
+  font-size: 2rem;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 5px 10px rgba(73, 71, 71, 0.2);
+}
+
 .chapterWrapper {
   width: 100%;
   display: flex;
@@ -46,10 +59,18 @@ body {
   justify-content: space-between;
 }
 
+.narration {
+  letter-spacing: 3px;
+}
+
 /* player */
 
 .player__username {
   padding-bottom: 2rem;
+}
+
+h3 {
+  font-family: "trashhandregular";
 }
 
 .player__avatar {
