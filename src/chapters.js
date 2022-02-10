@@ -10,7 +10,7 @@ const chapters = [
       },
       {
         answerID: "b",
-        answer: "The dogs tinks, I ignore it because I am cool like that",
+        answer: "The dogs stinks, I ignore it because I am cool like that",
         correct: false,
       },
     ],
@@ -53,6 +53,75 @@ const chapters = [
         correct: false,
       },
     ],
+  },
+  {
+    id: 4,
+    narration: "step 4",
+    options: [
+      {
+        answerID: "a",
+        answer: "The dog looks really friendly, I stop and pet it!",
+        correct: true,
+      },
+      {
+        answerID: "b",
+        answer: "The dogs tinks, I ignore it because I am cool like that",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 5,
+    narration: "step 5",
+    options: [
+      {
+        answerID: "a",
+        answer: "The dog looks really friendly, I stop and pet it!",
+        correct: true,
+      },
+      {
+        answerID: "b",
+        answer: "The dogs tinks, I ignore it because I am cool like that",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 6,
+    narration: "step 6",
+    options: [
+      {
+        answerID: "a",
+        answer: "The dog looks really friendly, I stop and pet it!",
+        correct: true,
+      },
+      {
+        answerID: "b",
+        answer: "The dogs tinks, I ignore it because I am cool like that",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 7,
+    narration: "step 7",
+    options: [
+      {
+        answerID: "a",
+        answer: "The dog looks really friendly, I stop and pet it!",
+        correct: true,
+      },
+      {
+        answerID: "b",
+        answer: "The dogs tinks, I ignore it because I am cool like that",
+        correct: false,
+      },
+    ],
+  },
+  {
+    id: 8,
+    narration: "You made it! Congrats!",
+    options: [],
   },
   {
     id: 20,
