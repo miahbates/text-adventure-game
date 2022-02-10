@@ -1,3 +1,78 @@
-img {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #6496e1;
+  background-color: #ffffff;
+  font-family: "Space Mono", monospace;
+}
+
+.App {
+  /* width: 90vw; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* chapter component  */
+
+.buttonsForm {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1rem;
+}
+
+.btn {
+  padding: 1rem;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px rgba(73, 71, 71, 0.2);
+  transition: transform 0.5s, box-shadow 0.5s;
+  /* letter-spacing: 3px; */
+  font-size: 2rem;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 5px 10px rgba(73, 71, 71, 0.2);
+}
+
+.chapterWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .narration {
+  letter-spacing: 3px;
+} */
+
+/* player */
+
+.player__username {
+  padding-bottom: 2rem;
+}
+
+.player__avatar {
   max-width: 100px;
+}
+
+/* Utility Classes */
+
+.center {
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stack-md > * + * {
+  margin-top: 2rem;
 }

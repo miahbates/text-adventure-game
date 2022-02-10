@@ -7,11 +7,11 @@ export default function Chapter(props) {
   // }, [count]);
 
   return (
-    <div>
-      <h3>{chapters[props.chapterStage].narration}</h3>
-      <div>{"⭐".repeat(props.life)}</div>
+    <div className="chapterWrapper stack-md">
+      <h3 className="narration">{chapters[props.chapterStage].narration}</h3>
+      <div>{"❤️".repeat(props.life)}</div>
 
-      <form>
+      <form className="buttonsForm">
         {chapters[props.chapterStage].options.map((option) => (
           <button
             onClick={(event) => {
@@ -33,6 +33,7 @@ export default function Chapter(props) {
             key={option.answerID}
             type="submit"
             value={option.correct}
+            className="btn"
           >
             {option.answer}
           </button>
