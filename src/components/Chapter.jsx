@@ -1,18 +1,31 @@
 import React from "react";
 import chapters from "../chapters.js";
 
-export default function Chapter(props) {
-  // React.useEffect(() => {
-  //   document.title = `Count: ${count}`;
-  // }, [count]);
+// const steps = document.querySelectorAll(".steps");
 
+function setBackground(chapterStage) {
+  // steps.forEach((step) => {
+  //   // step.classList.remove("currentStep");
+  //   return step;
+  // });
+  // const stepId = "step" + (chapterStage + 1);
+  const stepId = "step" + (chapterStage + 1);
+
+  if (chapterStage < 7) {
+    const currentStepDiv = document.querySelector("#" + stepId);
+    console.log(currentStepDiv);
+    currentStepDiv.classList.add("currentStep");
+  }
+}
+
+export default function Chapter(props) {
   return (
     <div className="chapterWrapper stack-md">
       <h3 className="narration">{chapters[props.chapterStage].narration}</h3>
       <div className="progress-wrapper">
         <div className="lives">{"❤️".repeat(props.life)}</div>
         <div className="step-wrap">
-          <div id="step1" className="steps"></div>
+          <div id="step1" className="steps "></div>
           <div id="step2" className="steps"></div>
           <div id="step3" className="steps"></div>
           <div id="step4" className="steps"></div>
@@ -27,14 +40,8 @@ export default function Chapter(props) {
           <button
             onClick={(event) => {
               event.preventDefault();
+              setBackground(props.chapterStage);
               const answer = boolean(event.target.value);
-              // console.log("ANSWER", typeof answer);
-              // console.log("PROPS LIFE", props.life);
-
-              // if (answer === false && props.life === 1) {
-              //   props.setLife(props.life - 1);
-              //   props.setChapterStage(20);
-              // }
 
               if (answer === false && props.life == 1) {
                 props.setChapterStage(8);

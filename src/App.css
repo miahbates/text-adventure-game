@@ -121,7 +121,8 @@ h1 {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background-color: #f3712d;
+  /* background-color: #f3712d; */
+  border: 4px solid #011e30;
 }
 
 h3 {
@@ -137,4 +138,10 @@ h3 {
 
 .stack-md > * + * {
   margin-top: 2rem;
+}
+
+.currentStep {
+  /* background-image: "./assets/images/checked.png"; */
+  /* background-size: cover; */
+  background-color: #011e30;
 }
