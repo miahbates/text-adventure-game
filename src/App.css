@@ -6,18 +6,37 @@
 
 body {
   background-color: #6496e1;
-  background-color: #ffffff;
+  background-color: #011e30;
   font-family: "Space Mono", monospace;
 }
 
 .App {
-  /* width: 90vw; */
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.logo {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #fff;
+}
+
+.subTitle {
+  color: #bdc8cd;
+  font-size: 1.1rem;
+}
+
+.loginForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /* chapter component  */
@@ -28,20 +47,21 @@ body {
   gap: 1rem;
 }
 
-.btn {
+.btn,
+.playerInput {
   padding: 1rem;
   background-color: #fff;
   border: none;
   cursor: pointer;
-  box-shadow: 1px 1px 4px rgba(73, 71, 71, 0.2);
-  transition: transform 0.5s, box-shadow 0.5s;
-  /* letter-spacing: 3px; */
-  font-size: 2rem;
+  transition: transform 0.5s, box-shadow 0.5s, border 0.5s;
+  font-size: 1.2rem;
+  border: 5px solid #089f00;
 }
 
 .btn:hover {
   transform: scale(1.02);
-  box-shadow: 1px 5px 10px rgba(73, 71, 71, 0.2);
+  /* box-shadow: 1px 5px 10px rgba(73, 71, 71, 0.2); */
+  border: 5px solid #f3712d;
 }
 
 .chapterWrapper {
@@ -49,16 +69,32 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #fff;
+  border: 5px solid #bdc8cd;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
+.lives {
+  font-size: 3rem;
+}
 /* .narration {
   letter-spacing: 3px;
 } */
 
 /* player */
 
+.playerInput {
+}
+
+.player {
+  align-self: center;
+  text-align: center;
+}
+
 .player__username {
   padding-bottom: 2rem;
+  color: #bdc8cd;
 }
 
 .player__avatar {
@@ -68,7 +104,7 @@ body {
 /* Utility Classes */
 
 .center {
-  max-width: 90vw;
+  max-width: 65rem;
   margin-left: auto;
   margin-right: auto;
 }

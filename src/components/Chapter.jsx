@@ -9,7 +9,7 @@ export default function Chapter(props) {
   return (
     <div className="chapterWrapper stack-md">
       <h3 className="narration">{chapters[props.chapterStage].narration}</h3>
-      <div>{"❤️".repeat(props.life)}</div>
+      <div className="lives">{"❤️".repeat(props.life)}</div>
       {console.log("CHAPTER STAGE", chapters[props.chapterStage])}
       <form className="buttonsForm">
         {chapters[props.chapterStage].options.map((option) => (
