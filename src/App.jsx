@@ -26,10 +26,16 @@ function App() {
         className="loginForm"
         onSubmit={(event) => {
           event.preventDefault();
-          setName(event.target.searchUsername.value);
+          setName(event.target.searchUsername.value.replace(/</g, "&ltn;"));
         }}
       >
-        <input type="search" name="searchUsername" className="playerInput" />
+        <input
+          type="search"
+          name="searchUsername"
+          className="playerInput"
+          aria-label="enter your github username"
+          required
+        />
         <button type="submit" className="btn">
           Search Player
         </button>
