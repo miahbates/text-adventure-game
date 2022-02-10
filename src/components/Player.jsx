@@ -15,9 +15,12 @@ export default function Player({ name }) {
     return <h1>Player Loading ...</h1>;
   } else {
     return (
-      <div>
+      <div className="player">
         <h2 className="player__username">{player.name}</h2>
-        <img className="player__avatar" src={player.avatar_url} alt="" />
+        {player.avatar_url ===
+        "https://avatars.githubusercontent.com/u/5909549?v=4" ? null : (
+          <img className="player__avatar" src={player.avatar_url} alt="" />
+        )}
       </div>
     );
   }
