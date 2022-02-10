@@ -10,22 +10,35 @@ export default function Chapter(props) {
     <div className="chapterWrapper stack-md">
       <h3 className="narration">{chapters[props.chapterStage].narration}</h3>
       <div>{"❤️".repeat(props.life)}</div>
-
+      {console.log("CHAPTER STAGE", chapters[props.chapterStage])}
       <form className="buttonsForm">
         {chapters[props.chapterStage].options.map((option) => (
           <button
             onClick={(event) => {
               event.preventDefault();
               const answer = boolean(event.target.value);
-              console.log("ANSWER", typeof answer);
-              console.log("PROPS LIFE", props.life);
+              // console.log("ANSWER", typeof answer);
+              // console.log("PROPS LIFE", props.life);
 
-              if (answer === false && props.life <= 0) {
-                props.setChapterStage(20);
-                console.log("life", props.life);
-              } else if (answer === false && props.life > 0) {
+              // if (answer === false && props.life === 1) {
+              //   props.setLife(props.life - 1);
+              //   props.setChapterStage(20);
+              // }
+
+              if (answer === false && props.life == 1) {
+                props.setChapterStage(8);
+                props.setLife(props.life - 1);
+              } else if (answer === false && props.life < 1) {
+                props.setChapterStage(0);
+                props.setLife(3);
+
+                // console.log("life", props.life);
+              } else if (answer === false && props.life > 1) {
                 props.setLife(props.life - 1);
                 props.setChapterStage(props.chapterStage + 1);
+              } else if (props.chapterStage === 7) {
+                props.setChapterStage(0);
+                props.setLife(3);
               } else {
                 props.setChapterStage(props.chapterStage + 1);
               }
@@ -47,6 +60,7 @@ function boolean(stringValue) {
   return stringValue === "true";
 }
 
+//{console.log("PROPS LIFE", props.life)}
 // .find((chapter) => chapter.id === chapterStage)
 // form onSubmit=""
 // onClick=""
