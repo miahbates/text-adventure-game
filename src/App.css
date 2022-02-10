@@ -17,6 +17,7 @@ body {
   justify-content: center;
   gap: 2rem;
   margin-bottom: 4rem;
+  padding: 0 2rem;
 }
 
 .logo {
@@ -56,6 +57,8 @@ h1 {
   transition: transform 0.5s, box-shadow 0.5s, border 0.5s;
   font-size: 1.2rem;
   border: 5px solid #089f00;
+  font-family: "Space Mono", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .btn:hover {
@@ -77,15 +80,13 @@ h1 {
 
 .lives {
   font-size: 3rem;
+  letter-spacing: 10px;
 }
 /* .narration {
   letter-spacing: 3px;
 } */
 
 /* player */
-
-.playerInput {
-}
 
 .player {
   align-self: center;
@@ -101,6 +102,31 @@ h1 {
   max-width: 100px;
 }
 
+.progress-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.step-wrap {
+  display: flex;
+  gap: 0.5rem;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding-left: 15%;
+}
+
+.steps {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #f3712d;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
 /* Utility Classes */
 
 .center {
