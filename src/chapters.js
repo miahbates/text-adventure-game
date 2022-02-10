@@ -195,7 +195,7 @@ const chapters = [
     narration: "You made it! Congrats!",
     options: [
       {
-        answerID: "q",
+        answerID: "cc",
         answer: "Play again!",
         correct: true,
       },
@@ -206,7 +206,7 @@ const chapters = [
     narration: "You LOST",
     options: [
       {
-        answerID: "z",
+        answerID: "dd",
         answer: "Play again!",
         correct: false,
       },
