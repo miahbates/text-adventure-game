@@ -133,7 +133,7 @@ export default function Chapter(props) {
         ))}
       </form>
       {props.chapterStage !== 7 ? null : (
-        <img src={victoryImage} alt="Victory image" className="victoryImage" />
+        <img src={victoryImage} alt="Victory image" className="outcomeImage" />
       )}
       {props.chapterStage !== 8 ? null : (
         <img src={lossImage} alt="Loss image" className="outcomeImage" />
