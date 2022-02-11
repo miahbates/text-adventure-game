@@ -26,7 +26,7 @@ function App() {
         className="loginForm"
         onSubmit={(event) => {
           event.preventDefault();
-          setName(event.target.searchUsername.value.replace(/</g, "&ltn;"));
+          setName(event.target.searchUsername.value);
         }}
       >
         <input
