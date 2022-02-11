@@ -149,3 +149,9 @@ h3 {
   /* background-size: cover; */
   background-color: #011e30;
 }
+
+.outcomeImage {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
