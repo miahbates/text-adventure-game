@@ -192,7 +192,7 @@ const chapters = [
   },
   {
     id: 7,
-    narration: "You made it! Congrats!",
+    narration: `You made it! Congrats! Now go and code your life away!`,
     options: [
       {
         answerID: "cc",
@@ -203,7 +203,7 @@ const chapters = [
   },
   {
     id: 8,
-    narration: "You LOST",
+    narration: "You LOST, try again!",
     options: [
       {
         answerID: "dd",
