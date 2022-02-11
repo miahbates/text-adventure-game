@@ -10,7 +10,7 @@ const chapters = [
       },
       {
         answerID: "b",
-        answer: "The dogs stinks, I ignore it because I am cool like that",
+        answer: "The dog stinks, I ignore it because I am cool like that",
         correct: false,
       },
       {
@@ -48,7 +48,7 @@ const chapters = [
       },
       {
         answerID: "h",
-        answer: "You call your Mum to give you a lift (how embarressing..)",
+        answer: "You call your Mum to give you a lift (how embarrassing..)",
         correct: false,
       },
     ],
@@ -119,7 +119,7 @@ const chapters = [
       },
       {
         answerID: "r",
-        answer: "Go home as you feel like this day as been a disaster",
+        answer: "Go home as you feel like this day has been a disaster",
         correct: false,
       },
       {
@@ -175,7 +175,7 @@ const chapters = [
       },
       {
         answerID: "z",
-        answer: "control tilder (open terminal)",
+        answer: "control tilde (open terminal)",
         correct: false,
       },
       {
