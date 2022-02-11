@@ -3,13 +3,12 @@ import React from "react";
 export default function Player({ name }) {
   const [player, setPlayer] = React.useState(null);
 
-  const USER_URL = `https://api.github.com/users/`;
+  const USER_URL = `https://api.github.com/users/${name}`;
   React.useEffect(() => {
-    fetch(USER_URL + name)
+    fetch(USER_URL)
       .then((res) => res.json())
       .then((data) => setPlayer(data));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [name]);
+  }, [USER_URL]);
 
   if (!player) {
     return <h1>Player Loading ...</h1>;
