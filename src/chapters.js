@@ -5,22 +5,22 @@ const chapters = [
     options: [
       {
         answerID: "a",
-        answer: "The dog looks really friendly so I stop and pet it!",
+        answer: "The dog looks really friendly so you stop and pet it!",
         correct: true,
       },
       {
         answerID: "b",
-        answer: "The dog stinks, I ignore it because I am cool like that",
+        answer: "The dog stinks, you ignore it because you are cool like that",
         correct: false,
       },
       {
         answerID: "c",
-        answer: "I shout at the dog 'go away'!",
+        answer: "You shout at the dog 'go away'!",
         correct: false,
       },
       {
         answerID: "d",
-        answer: "I pet the cat sitting next to the dog instead",
+        answer: "You pet the cat sitting next to the dog instead",
         correct: false,
       },
     ],
@@ -75,7 +75,7 @@ const chapters = [
       },
       {
         answerID: "l",
-        answer: "Throw away the keys to adam's bike",
+        answer: "Throw away the keys to Adam's bike",
         correct: false,
       },
     ],
@@ -92,17 +92,17 @@ const chapters = [
       },
       {
         answerID: "n",
-        answer: "McDonalds",
+        answer: "McDonald's",
         correct: false,
       },
       {
         answerID: "o",
-        answer: "Gails bakery",
+        answer: "Gail's bakery",
         correct: false,
       },
       {
         answerID: "p",
-        answer: "A meal deal from tesco",
+        answer: "A meal deal from Tesco",
         correct: false,
       },
     ],
@@ -110,7 +110,7 @@ const chapters = [
   {
     id: 4,
     narration:
-      "Breakfast over-ran... You forgot you were mean't to meet Milly and Juliette at finsbury park station, what do you do?",
+      "Breakfast over-ran... You forgot you were meant to meet Milly and Juliette at Finsbury Park station, what do you do?",
     options: [
       {
         answerID: "q",
@@ -125,13 +125,13 @@ const chapters = [
       {
         answerID: "s",
         answer:
-          "Text them telling them space4 is closed so you won't be the only one not going in today.",
+          "Text them telling them space 4 is closed so you won't be the only one not going in today.",
         correct: false,
       },
       {
         answerID: "t",
         answer:
-          "Text them letting them know you'll be late and get them a couple of snacks from tesco to bring to space4!",
+          "Text them letting them know you'll be late and get them a couple of snacks from Tesco to bring to space 4!",
         correct: true,
       },
     ],
@@ -139,7 +139,7 @@ const chapters = [
   {
     id: 5,
     narration:
-      "You meet Oli outside space4, he won't let you in unless you give him the secret password, what is it?",
+      "You meet Oli outside space 4, he won't let you in unless you give him the secret password, what is it?",
     options: [
       {
         answerID: "u",
@@ -166,7 +166,7 @@ const chapters = [
   {
     id: 6,
     narration:
-      "You arrive outside the space4 door and the 'tech guru' approaches you and asks you what is the best keyboard shortcut?",
+      "You arrive outside the space 4 door and the 'tech guru' approaches you and asks you what is the best keyboard shortcut?",
     options: [
       {
         answerID: "y",
