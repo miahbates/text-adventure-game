@@ -15,7 +15,7 @@ A text based adventure game narrating your journey to SPACE 4!
 * Quality Assurance - Joint
 
 ## How to install 🛠️
-* `git clone https://github.com/fac-23/week5-react-paolo-miah`
+* `git clone https://github.com/miahbates/text-adventure-game`
 * run `npm install` in your terminal to install the dependencies.
 * run `npm run dev` in your terminal to start the server.
 
