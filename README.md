@@ -9,10 +9,10 @@ A text based adventure game narrating your journey to SPACE 4!
 [*Deployed version here!*](https://sleepy-meitner-5e2ffb.netlify.app/) :sparkles:
 
 ## Team members
-* Scrum Facilitator - Joint
-* UX Design - Joint
-* DevOps - Joint
-* Quality Assurance - Joint
+* Scrum Facilitator - shared.
+* UX Design - shared.
+* DevOps - shared.
+* Quality Assurance - shared.
 
 ## How to install 🛠️
 * `git clone https://github.com/miahbates/text-adventure-game`
