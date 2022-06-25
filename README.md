@@ -8,6 +8,8 @@ A text based adventure game narrating your journey to SPACE 4!
 
 [*Deployed version here!*](https://sleepy-meitner-5e2ffb.netlify.app/) :sparkles:
 
+<img width="1030" alt="Screenshot 2022-06-25 at 21 53 19" src="https://user-images.githubusercontent.com/78933903/175790222-3a6c8af3-4577-4168-aaa8-2a91c27b96f6.png">
+
 ## Team members
 * Scrum Facilitator - shared.
 * UX Design - shared.
